@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+</head>
+<body>
+    <header class="site-header">
+        <h2 class="site-logo"><a href="">Ice Cream</a></h2>
+
+        <nav class="links">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <button id="expand" onclick="show()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div id="side-bar" style="top: -110%;">
+            <div class="content">
+                <button id="collapse" onclick="hide()">
+                    <i class="fa-solid fa-x"></i>
+                </button>
+                
+                <ul>
+                    <li><a href="">Home</a> <i class="fa-solid fa-home"></i></li>
+                    <li><a href="">Order</a> <i class="fa-solid fa-shopping-bag"></i></li>
+                    <li><a href="">Sale</a> <i class="fa-solid fa-certificate"></i></li>
+                    <li><a href="">All Products</a> <i class="fa-solid fa-ice-cream"></i></li>
+                    <li><a href="">About Us</a> <i class="fa-solid fa-info"></i></li>
+                    <li><a href="">Contact Us</a> <i class="fa-solid fa-phone"></i></li>
+                </ul>
+
+                <h2 class="site-logo" style="text-align: center;"><a href="">Ice Cream</a></h2>
+            </div>
+        </div>
+    </header>
+
+    <div class="slider-wrapper">
+		<div class="slider">
+			<div class="slide active" id="slide1"> <h1>Ice Cream</h1> </div>
+			<div class="slide" id="slide2"> <h1>Slide 2</h1> </div>
+			<div class="slide" id="slide3"> <h1>Slide 3</h1> </div>
+			<div class="slide" id="slide4"> <h1>Slide 4</h1> </div>
+		</div>
+
+		<nav class="nav-btns">
+			<button class="btn active" onclick="navigate(0)"></button>
+			<button class="btn" onclick="navigate(1)"></button>
+			<button class="btn" onclick="navigate(2)"></button>
+			<button class="btn" onclick="navigate(3)"></button>
+		</nav>
+
+        <div class="btns">
+            <a onclick="slide(-1)" class="prev">&#10094;</a>
+		    <a onclick="slide(+1)" class="next">&#10095;</a>
+        </div>
+	</div>
+
+    <section class="intro">
+        <div class="">
+            <h1 class="text-black">In the mood for a treat?</h1>
+
+            <div class="image-section">
+                <img src="Images/img_3.jpg" alt="">
+            </div>
+
+            <p class="text-black">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis asperiores rerum excepturi 
+                numquam! Molestiae vitae velit, officia culpa voluptatem repudiandae natus possimus dignissimos 
+            </p>
+            <br>
+            <p class="text-black">
+                velit reprehenderit odit quae, tempora, in, error mollitia esse voluptatem praesentium doloribus 
+                tenetur adipisci non! Nesciunt laudantium molestiae pariatur at adipisci dicta officia sint rerum a? 
+                A suscipit ducimus ut minima nostrum consequatur, amet, magnam voluptates, provident mollitia. 
+            </p>
+        </div>
+
+        <div class="">
+            <h1 class="text-black">The world's number 1 desert.</h1>
+
+            <div class="image-section">
+                <img src="Images/img_2.jpg" alt="">
+            </div>
+
+            <p class="text-black">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis asperiores rerum excepturi 
+                numquam! Molestiae vitae velit, officia culpa voluptatem repudiandae natus possimus dignissimos 
+            </p>
+            <br>
+            <p class="text-black">
+                velit reprehenderit odit quae, tempora, in, error mollitia esse voluptatem praesentium doloribus 
+                tenetur adipisci non! Nesciunt laudantium molestiae pariatur at adipisci dicta officia sint rerum a? 
+                A suscipit ducimus ut minima nostrum consequatur, amet, magnam voluptates, provident mollitia. 
+            </p>
+        </div>
+    </section>
+
+    <section class="product-section">
+        <h1 class="title">Products</h1>
+        <p style="text-align: center; margin-top: 15px;">Have a look at our best sellers</p>
+
+        <div class="products-wrapper">
+            <div class="item">
+                <img src="Images/img_1.jpg" alt="" class="thumb">
+                <p class="name">Name</p>
+                <button class="buy">Buy</button>
+            </div>
+
+            <div class="item">
+                <img src="Images/img_1.jpg" alt="" class="thumb">
+                <p class="name">Name</p>
+                <button class="buy">Buy</button>
+            </div>
+
+            <div class="item">
+                <img src="Images/img_1.jpg" alt="" class="thumb">
+                <p class="name">Name</p>
+                <button class="buy">Buy</button>
+            </div>
+
+            <div class="item">
+                <img src="Images/img_1.jpg" alt="" class="thumb">
+                <p class="name">Name</p>
+                <button class="buy">Buy</button>
+            </div>
+        </div>
+    </section>
+    
+    <script src="index.js"></script>
+</body>
+</html>
